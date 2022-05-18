@@ -156,9 +156,26 @@ function decode(word) {
 
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, object) {
+  if (array.length != 0) {
+    listTech = array.sort();
+    nameObject = object;
+    resultList = [];
+
+    for (let index = 0; index < listTech.length; index++) {
+      resultList[index] = {
+        tech: listTech[index],
+        name: nameObject
+
+      }
+    }
+    return resultList;
+  }
+  else {
+    return "Vazio!";
+  }
 }
+
 
 module.exports = {
   calcArea,
