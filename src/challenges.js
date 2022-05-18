@@ -1,6 +1,5 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  // seu código aqui
   if (valor1 && valor2) {
     return true;
   }
@@ -10,21 +9,18 @@ function compareTrue(valor1, valor2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  // seu código aqui
   let area = (base * height) / 2;
   return area;
 }
 
 // Desafio 3
 function splitSentence(phrase) {
-  // seu código aqui
   let splitedPhrase = phrase.split(" ");
   return splitedPhrase;
 }
 
 // Desafio 4
 function concatName(array) {
-  // seu código aqui
   let lastElement = array[array.length - 1];
   let firstElement = array[0];
   let finalConcat = [lastElement, firstElement];
@@ -33,7 +29,6 @@ function concatName(array) {
 
 // Desafio 5
 function footballPoints(wins,ties) {
-  // seu código aqui
   if (wins === 14 && ties === 8) {
     return (wins*3 + ties*1);
   }
@@ -66,12 +61,10 @@ function highestCount(arrayCheck) {
   return timesBiggerNumber;
 }
 
-console.log(highestCount([-2, -2, -1]));
  
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  // seu código aqui
   let cat1ToMouse = Math.abs(Math.abs(cat1) - Math.abs(mouse));
   let cat2ToMouse = Math.abs(Math.abs(cat2) - Math.abs(mouse));
 
@@ -88,7 +81,6 @@ function catAndMouse(mouse, cat1, cat2) {
   }
 }
 
-console.log(catAndMouse(0, 3, 3));
 
 // Desafio 8
 function fizzBuzz() {
