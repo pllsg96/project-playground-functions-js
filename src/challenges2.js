@@ -6,20 +6,26 @@ function generatePhoneNumber(arrayPhone) {
   let ddd = [];
   let firstDigits = [];
   let lastDigits = [];
+
   for (let index = 0; index < arrayPhone.length; index++) {
-    if (arrayPhone[index] !== null) {
-      contNumber += 1;
-    }
-    if (arrayPhone[index] < 0 || arrayPhone[index] > 9) {
-      diffNumber += 1;
-    }
-
-    }
-
-    
-      
-  
-  
+      if (arrayPhone[index] !== null) {
+        contNumber += 1;
+      }
+      if (arrayPhone[index] < 0 || arrayPhone[index] > 9) {
+        diffNumber += 1;
+      }
+    repeatNumber = 0;
+      for (let index2 = 0; index2 < 9; index2++) {
+        if (arrayPhone[index] === arrayPhone[index2]) {
+         repeatNumber += 1;
+        }
+        if (repeatNumber > 3) {
+          return console.log(repeatNumber);
+          break;
+          
+        }
+      }
+  }
 
   if (contNumber !== 11) {
     return ("Array com tamanho incorreto.");
